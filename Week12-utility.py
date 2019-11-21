@@ -50,8 +50,15 @@ def ScoreFinder(list1, list2, string):
     elif playernum == -1:
         PrintOutput("player not found")
 
-
-
+#Function 6:
+def Union(list1, list2):
+    for i in list1:
+        for x in list2:
+            if x == i:
+                list2.remove(x)
+    onion = list1 + list2
+    return onion
+    
 
 
 

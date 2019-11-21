@@ -6,3 +6,9 @@
 def PrintOutput(word):
     print("OUTPUT", word)
 
+#Function 2:
+def LoadFile(textfile):
+    with open(textfile, "r") as text:
+        lines = text.read()
+        lines = lines.split("\n")
+        return lines

@@ -68,6 +68,16 @@ def Intersection(list1, list2):
                 intersection.append(x)
     return intersection
 
+#Function 8:
+def NotIn(list1, list2):
+    newlist = []
+    for z in list1:
+        newlist.append(z)
+    for i in list1:
+        for x in list2:
+            if x == i:
+                newlist.remove(i)
+    return newlist
 
 
 

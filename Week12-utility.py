@@ -11,4 +11,15 @@ def LoadFile(textfile):
     with open(textfile, "r") as text:
         lines = text.read()
         lines = lines.split("\n")
-        return lines
+        PrintOutput(lines)
+
+#Function 3:
+def UpdateString(string1, string2, index):
+    letterlist = []
+    for i in string1:
+        letterlist.append(i)
+    letterlist[index] = string2
+    print("OUTPUT", end=" ")
+    for x in letterlist:
+        print(x, end= "")
+    print()

@@ -23,3 +23,20 @@ def UpdateString(string1, string2, index):
     for x in letterlist:
         print(x, end= "")
     print()
+
+#Function 4:
+HCList = ["Hi there", "word word word!", "Word word", "things", "things"]
+def FindWordCount(lizt, stryng):
+    wordcount = 0
+    newlizt = []
+    bestlizt = []
+    for x in lizt:
+        newlizt.append(x.split(" ")) #separate list into individual words
+    for z in newlizt:
+        bestlizt = bestlizt + z #Turn list of lists into one list
+    for i in bestlizt:
+        if i == stryng:
+            wordcount += 1 #Adds one to word count if the word is in the list
+    PrintOutput(wordcount)
+    print(bestlizt)
+    

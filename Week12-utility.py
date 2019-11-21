@@ -25,7 +25,7 @@ def UpdateString(string1, string2, index):
     print()
 
 #Function 4:
-HCList = ["Hi there", "word word word!", "Word word", "things", "things"]
+HCList = ["Hi there", "word word word!", "Word word", "things", "things"] #For testing purposes
 def FindWordCount(lizt, stryng):
     wordcount = 0
     newlizt = []
@@ -38,5 +38,32 @@ def FindWordCount(lizt, stryng):
         if i == stryng:
             wordcount += 1 #Adds one to word count if the word is in the list
     PrintOutput(wordcount)
-    print(bestlizt)
     
+#Function 5:
+def ScoreFinder(list1, list2, string):
+    playernum = -1
+    for i in range(0, len(list1)):
+        if list1[i].lower() == string.lower():
+            playernum = i
+    if playernum > -1:
+        print("OUTPUT", list1[playernum], "got a score of", list2[playernum])
+    elif playernum == -1:
+        PrintOutput("player not found")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

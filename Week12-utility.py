@@ -1,6 +1,7 @@
+# https://github.com/Maxxv7/Week12-utility-lab
 # Maxim Alvarado
 # CSCI 102 - Section E
-# Week 12 - Part A
+# Week 12 - Part B
 
 #Function 1:
 def PrintOutput(word):
